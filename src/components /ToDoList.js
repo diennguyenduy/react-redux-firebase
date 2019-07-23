@@ -1,4 +1,4 @@
-import '../ToDoList.css';
+import './ToDoList.css';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
@@ -30,14 +30,18 @@ class ToDoList extends Component {
         <div id='todo-add-form' className='col s10 offset-s1'>
           <form onSubmit={this.handleFormSubmit}>
             <div className='input-field'>
-              <i className='material-icons prefix'>note_add</i>
+              <i className='material-icons prefix'>Note add: </i>
               <input
                 value={addFormValue}
                 onChange={this.handleInputChange}
                 id='toDoNext'
                 type='text'
               />
-              <label htmlFor='toDoNext'>What To Do Next</label>
+              <div>
+                <label id='what-to-do-next' htmlFor='toDoNext'>
+                  What To Do Next:{' '}
+                </label>
+              </div>
             </div>
           </form>
         </div>
@@ -74,15 +78,16 @@ class ToDoList extends Component {
           {this.renderAddForm()}
           {this.renderToDos()}
         </div>
+        <br />
         <div className='fixed-action-btn'>
           <button
             onClick={() => this.setState({ addFormVisible: !addFormVisible })}
             className='btn-floating btn-large teal darken-4'
           >
             {addFormVisible ? (
-              <i className='large material-icons'>close</i>
+              <i className='large material-icons'>Close</i>
             ) : (
-              <i className='large material-icons'>add</i>
+              <i className='large material-icons'>Add</i>
             )}
           </button>
         </div>

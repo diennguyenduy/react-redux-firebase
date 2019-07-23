@@ -2,10 +2,12 @@
   margin-top: 25px;
 }
 
-.to-do-list-item {
-  margin-top: 10px;
-  color: white;
-  transition: background-color 1s;
+#what-to-do-next {
+  margin: 2%;
+}
+
+.project-button {
+  margin: 5%;
 }
 
 .to-do-list-item h4 {
@@ -19,7 +21,7 @@
 
 .complete-todo-item {
   float: right;
-  right: 20px;
+  padding-right: 20%;
 }
 
 #todo-add-form {
@@ -29,6 +31,14 @@
 
 #nothing-was-found {
   margin-top: 150px;
+}
+
+.btn-floating {
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 50%;
+  margin-bottom: 2%;
 }
 
 @keyframes slidein {
