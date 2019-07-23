@@ -4,4 +4,4 @@ import { FirebaseConfig } from '../config/keys';
 firebase.initializeApp(FirebaseConfig);
 
 const databaseRef = firebase.database().ref();
-export const todoRef = databaseRef.child('todos');
+export const todosRef = databaseRef.child('todos');

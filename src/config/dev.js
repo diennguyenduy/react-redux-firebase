@@ -1,5 +1,5 @@
 export const FirebaseConfig = {
   apiKey: '<Web API Key>',
-  authDomain: '<Project ID>.firebaseapp.com',
-  databaseURL: '<Database url>'
+  authDomain: 'https://test2-b7285.firebaseapp.com',
+  databaseURL: 'https://test2-b7285.firebaseio.com/'
 };
